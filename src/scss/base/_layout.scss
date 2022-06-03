@@ -3,5 +3,6 @@ body {
 }
 
 main {
-  max-width: 1440px;
+  width: min(95%, 1440px);
+  margin-inline: auto;
 }
