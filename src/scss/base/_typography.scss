@@ -1,0 +1,9 @@
+@use "../variables" as vars;
+
+body {
+  font-family: vars.$roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: vars.$black;
+}
