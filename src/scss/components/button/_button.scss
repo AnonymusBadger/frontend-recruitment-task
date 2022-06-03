@@ -1,0 +1,31 @@
+@use "../../variables" as vars;
+
+.button {
+  --color-base: #{vars.$beige--400};
+  --color-hover: #{vars.$beige--300};
+  --color-active: #{vars.$beige--500};
+  --color-text: #{vars.$white};
+
+  font-size: 1rem;
+  padding: 1em 2.5em;
+  border: none;
+  border-radius: 2em;
+  font-weight: 700;
+  color: var(--color-text);
+  background-color: var(--color-base);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--color-hover);
+  }
+
+  &:active {
+    transition-property: background-color;
+    transition-duration: 0s;
+    background-color: var(--color-active);
+  }
+}
