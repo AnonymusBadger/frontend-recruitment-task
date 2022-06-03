@@ -19,7 +19,7 @@
   transition-timing-function: ease-in-out;
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     background-color: var(--color-hover);
   }
 
