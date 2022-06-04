@@ -1,8 +1,11 @@
 @use "../../mixins/breakpoints" as b;
 
+.task-module__image {
+  margin-bottom: 1rem;
+}
+
 .task-module__image img {
   width: 100%;
-  margin-bottom: 1rem;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   max-height: inherit;
