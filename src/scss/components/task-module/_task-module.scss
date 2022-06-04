@@ -1,3 +1,25 @@
+@use "../../mixins/breakpoints" as b;
+
 .task-module {
   margin-top: 4rem;
+}
+
+@include b.breakpoint-up("sm") {
+  .task-module {
+    margin-inline: auto;
+    width: fit-content;
+    display: flex;
+    transition: gap 0.5s;
+    column-gap: max(20px, 4vw);
+
+    & > * {
+      flex: 1 1 0;
+    }
+  }
+}
+
+@include b.breakpoint-up("md") {
+  .task-module {
+    column-gap: min(6.6vw, 95px);
+  }
 }
