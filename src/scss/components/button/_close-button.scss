@@ -1,0 +1,26 @@
+@use "../../variables/colors" as c;
+
+.close-button {
+  border: none;
+  padding: 0;
+  height: 1em;
+  width: 1em;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 6L18 18' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+    center/1em auto no-repeat;
+  cursor: pointer;
+
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

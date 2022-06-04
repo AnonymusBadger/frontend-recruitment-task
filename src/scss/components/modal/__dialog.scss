@@ -1,0 +1,10 @@
+.modal__dialog {
+  background-color: white;
+  width: min(80%, 920px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-inline: clamp(30px, 10vw, 95px);
+  padding-block: clamp(50px, 10vw, 56px);
+}
