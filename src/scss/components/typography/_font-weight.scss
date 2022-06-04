@@ -1,0 +1,11 @@
+$weights: (
+  "normal": 300,
+  "bolder": 600,
+  "bold": 700,
+);
+
+@each $name, $weight in $weights {
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+}
