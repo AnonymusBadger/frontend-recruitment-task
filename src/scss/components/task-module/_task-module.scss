@@ -1,7 +1,7 @@
 @use "../../mixins/breakpoints" as b;
 
 .task-module {
-  margin-top: 4rem;
+  margin-block: 6rem;
 }
 
 @include b.breakpoint-up("sm") {
