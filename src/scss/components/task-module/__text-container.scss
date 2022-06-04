@@ -13,7 +13,7 @@
 @include b.breakpoint-up("sm") {
   .task-module__text-container {
     padding-block: 1rem;
-    width: 100%;
+    width: clamp(80%, 40vw, 100%);
     max-width: 380px;
   }
 
