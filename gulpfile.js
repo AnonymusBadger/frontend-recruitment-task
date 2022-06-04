@@ -64,8 +64,27 @@ function serve() {
         parallel(scssTask, jsTask)).on('change', browserSync.reload);
 };
 
-exports.default = series(
-    parallel(scssTask, jsTask),
-    cacheBustTask,
-    serve,
-);
+const useAs = "dev";
+
+switch (useAs) {
+    case "dev":
+        exports.default = series(
+            parallel(scssTask, jsTask),
+            cacheBustTask,
+            serve,
+        );
+        break;
+    case "watch":
+        exports.default = series(
+            parallel(scssTask, jsTask),
+            cacheBustTask,
+            watchTask,
+        );
+        break;
+    case "build":
+        exports.default = series(
+            parallel(scssTask, jsTask),
+            cacheBustTask,
+        );
+        break;
+}
