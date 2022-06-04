@@ -53,6 +53,10 @@ function serve() {
     browserSync.init({
         server: {
             baseDir: "./"
+        },
+        port: 8000,
+        ui: {
+            port: 8080
         }
     });
 
