@@ -5,6 +5,8 @@
   margin-bottom: 1rem;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  max-height: inherit;
+  max-width: inherit;
 }
 
 @include b.breakpoint-up("sm") {
