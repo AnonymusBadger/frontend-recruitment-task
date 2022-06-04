@@ -22,15 +22,15 @@
     background-color: var(--color-hover);
   }
 
-  &:active {
-    transition-property: background-color;
-    transition-duration: 0s;
-    background-color: var(--color-active);
-  }
-
   @media (hover: hover) {
     &:hover {
       background-color: var(--color-hover);
     }
+  }
+
+  &:active {
+    transition-property: background-color;
+    transition-duration: 0s;
+    background-color: var(--color-active);
   }
 }
