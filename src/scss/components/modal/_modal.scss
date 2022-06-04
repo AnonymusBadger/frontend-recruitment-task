@@ -4,8 +4,9 @@
   position: absolute;
   inset: 0;
   background-color: rgba(c.$black, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   min-width: 300px;
 }
