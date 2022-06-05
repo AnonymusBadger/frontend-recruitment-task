@@ -3,7 +3,7 @@
 */
 const makeModal = (el) => {
   const trigger = document.querySelector(`[data-target="#${el.id}"]`);
-  const closeBttn = el.querySelector(".modal__close-btn");
+  const closeBttns = el.querySelectorAll("[data-dismiss=modal]");
   const content = el.querySelector(".modal__content");
 
   /**
@@ -40,8 +40,10 @@ const makeModal = (el) => {
     show();
   });
 
-  closeBttn.addEventListener("click", () => {
-    hide();
+  closeBttns.forEach(bttn => {
+    bttn.addEventListener("click", () => {
+      hide();
+    });
   });
 
   return {
@@ -49,7 +51,7 @@ const makeModal = (el) => {
     hide: hide,
     toggle: toggle,
     trigger: trigger,
-    closeBttn: closeBttn,
+    closeBttns: closeBttns,
   };
 };
 
