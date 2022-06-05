@@ -34,3 +34,9 @@
     background-color: var(--color-active);
   }
 }
+
+.button--warning {
+  --color-base: #{vars.$red--400};
+  --color-hover: #{vars.$red--300};
+  --color-active: #{vars.$red--500};
+}
