@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: -1rem;
 }
 
-.modal__buttons > .button:first-child {
-  margin-top: 1em;
+.modal__buttons .button:last-child {
+  margin-bottom: 1rem;
 }
 
 @include b.breakpoint-up("sm") {
