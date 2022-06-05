@@ -13,6 +13,38 @@
 <body>
     <main>
         <section class="basic-container">
+            <div id="modal-1" class="modal" aria-hidden="true" tabindex="-1" aria-labelledby="modal-1__label">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <button class="close-button modal__close-btn"
+                                type="button"
+                                aria-label="Close">
+                        </button>
+                        <div class="modal__text">
+                            <h5 class="T1" id="modal-1__label">Alert!</h5>
+                            <p>You have clicked
+                                <span class="fw-bolder">
+                                    <span data-counter-id="task-1"
+                                          data-counter-type="display">
+                                        X
+                                    </span>
+                                    times
+                                </span>
+                                on related button.
+                            </p>
+                        </div>
+                        <div class="modal__buttons">
+                            <button class="button button--warning"
+                                    type="button"
+                                    data-counter-id="task-1"
+                                    data-counter-type="reset"
+                                    >
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <article class="task-module" data-counter-id="task-1">
                 <picture class="task-module__image">
                     <source media="(min-width: 992px)"
@@ -60,38 +92,6 @@
                     </button>
                 </div>
             </article>
-            <div id="modal-1" class="modal" aria-hidden="true" tabindex="-1" aria-labelledby="modal-1__label">
-                <div class="modal__dialog">
-                    <div class="modal__content">
-                        <button class="close-button modal__close-btn"
-                                type="button"
-                                aria-label="Close">
-                        </button>
-                        <div class="modal__text">
-                            <h5 class="T1" id="modal-1__label">Alert!</h5>
-                            <p>You have clicked
-                                <span class="fw-bolder">
-                                    <span data-counter-id="task-1"
-                                          data-counter-type="display">
-                                        X
-                                    </span>
-                                    times
-                                </span>
-                                on related button.
-                            </p>
-                        </div>
-                        <div class="modal__buttons">
-                            <button class="button button--warning"
-                                    type="button"
-                                    data-counter-id="task-1"
-                                    data-counter-type="reset"
-                                    >
-                                Reset
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 </body>
