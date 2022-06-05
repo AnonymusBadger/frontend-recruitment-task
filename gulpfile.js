@@ -1,4 +1,6 @@
 /* eslint-disable */
+const env = "dev";
+
 const { src, dest, watch, series, parallel } = require('gulp');
 
 const sourcemaps = require('gulp-sourcemaps');
@@ -69,9 +71,7 @@ function serve() {
         parallel(scssTask, jsTask)).on('change', browserSync.reload);
 };
 
-const useAs = "dev";
-
-switch (useAs) {
+switch (env) {
     case "dev":
         exports.default = series(
             parallel(scssTask, jsTask),
