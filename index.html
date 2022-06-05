@@ -53,6 +53,7 @@
                     <button class="button"
                             type="button"
                             data-toggle="modal"
+                            data-counter-type="up"
                             data-target="#modal-1">
                         Button
                     </button>
@@ -67,12 +68,20 @@
                         </button>
                         <div class="modal__text">
                             <h5 class="T1" id="modal-1__label">Alert!</h5>
-                            <p>You have clicked <span class="fw-bolder">X times</span> on related button.
+                            <p>You have clicked
+                                <span class="fw-bolder">
+                                    <span data-counter-type="display">
+                                        X
+                                    </span>
+                                    times
+                                </span>
+                                on related button.
                             </p>
                         </div>
                         <div class="modal__buttons">
                             <button class="button button--warning"
                                     type="button"
+                                    data-counter-type="reset"
                                     >
                                 Reset
                             </button>
