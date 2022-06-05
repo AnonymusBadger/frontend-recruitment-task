@@ -1,12 +1,9 @@
 @use "../../variables/colors" as c;
 
 .modal {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: rgba(c.$black, 0.5);
   display: none;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   min-width: 300px;
 }
