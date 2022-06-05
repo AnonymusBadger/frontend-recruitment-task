@@ -16,12 +16,14 @@ const makeModal = (el) => {
   const show = () => {
     el.style.display = "block";
     document.addEventListener("click", clickOutside);
+    document.body.classList.add("stop-scroll");
     el.focus();
   };
 
   const hide = () => {
     el.style.display = "none";
     document.removeEventListener("click", clickOutside);
+    document.body.classList.remove("stop-scroll");
     trigger.focus();
   };
 
@@ -52,6 +54,7 @@ const makeModal = (el) => {
 };
 
 
+// auto mount
 document.addEventListener("DOMContentLoaded", () => {
   const modals = document.querySelectorAll(".modal");
 
