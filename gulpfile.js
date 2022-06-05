@@ -1,5 +1,5 @@
 /* eslint-disable */
-const env = "dev";
+const env = "build";
 
 const { src, dest, watch, series, parallel } = require('gulp');
 
