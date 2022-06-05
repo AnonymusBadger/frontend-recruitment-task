@@ -6,4 +6,9 @@
   background-color: rgba(c.$black, 0.5);
   display: none;
   min-width: 300px;
+  transition: opacity 0.15s linear;
+}
+
+.modal:not(.show) {
+  opacity: 0;
 }

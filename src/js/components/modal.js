@@ -15,20 +15,26 @@ const makeModal = (el) => {
 
   const show = () => {
     el.style.display = "block";
-    document.addEventListener("click", clickOutside);
+    setTimeout(() => {
+      el.classList.add("show");
+    }, 150);
     document.body.classList.add("stop-scroll");
+    document.addEventListener("click", clickOutside);
     el.focus();
   };
 
   const hide = () => {
-    el.style.display = "none";
-    document.removeEventListener("click", clickOutside);
+    el.classList.remove("show");
+    setTimeout(() => {
+      el.style.display = "none";
+    }, 150);
     document.body.classList.remove("stop-scroll");
+    document.removeEventListener("click", clickOutside);
     trigger.focus();
   };
 
   const toggle = () => {
-    if (el.offsetWidth > 0 && el.offsetHeight > 0) {
+    if (el.classList.contains("show")) {
       hide();
     } else {
       show();
