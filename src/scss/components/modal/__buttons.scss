@@ -1,0 +1,19 @@
+@use "../../mixins/breakpoints" as b;
+
+.modal__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal__buttons > .button:first-child {
+  margin-top: 1em;
+}
+
+@include b.breakpoint-up("sm") {
+  .modal__buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
