@@ -21,6 +21,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "rollup": "^2.75.5",
+    "rollup-plugin-uglify": "^6.0.4",
     "sass": "^1.52.1"
   }
 }

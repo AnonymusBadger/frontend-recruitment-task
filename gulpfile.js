@@ -1,15 +1,16 @@
+/* eslint-disable */
 const { src, dest, watch, series, parallel } = require('gulp');
 
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 sass.compiler = require('sass');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+const { uglify } = require('rollup-plugin-uglify');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const replace = require('gulp-replace');
 const browserSync = require('browser-sync').create();
+const rollup = require('rollup');
 
 // File paths
 const files = {
@@ -27,14 +28,18 @@ function scssTask() {
         ); // put final CSS in dist folder
 }
 
-function jsTask() {
-    return src([
-        files.jsPath
-    ])
-        .pipe(concat('all.js'))
-        .pipe(uglify())
-        .pipe(dest('dist')
-        );
+async function jsTask() {
+    const bundle = await rollup
+        .rollup({
+            input: "./src/js/main.js",
+            plugins: [uglify()],
+        });
+    return await bundle.write({
+        file: "./dist/all.js",
+        format: 'iife',
+        name: "all",
+        sourcemap: "inline",
+    });
 }
 
 var cbString = new Date().getTime();
