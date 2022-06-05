@@ -13,7 +13,7 @@
 <body>
     <main>
         <section class="basic-container">
-            <article class="task-module">
+            <article class="task-module" data-counter-id="task-1">
                 <picture class="task-module__image">
                     <source media="(min-width: 992px)"
                             srcset="
@@ -53,6 +53,7 @@
                     <button class="button"
                             type="button"
                             data-toggle="modal"
+                            data-counter-id="task-1"
                             data-counter-type="up"
                             data-target="#modal-1">
                         Button
@@ -70,7 +71,8 @@
                             <h5 class="T1" id="modal-1__label">Alert!</h5>
                             <p>You have clicked
                                 <span class="fw-bolder">
-                                    <span data-counter-type="display">
+                                    <span data-counter-id="task-1"
+                                          data-counter-type="display">
                                         X
                                     </span>
                                     times
@@ -81,6 +83,7 @@
                         <div class="modal__buttons">
                             <button class="button button--warning"
                                     type="button"
+                                    data-counter-id="task-1"
                                     data-counter-type="reset"
                                     >
                                 Reset

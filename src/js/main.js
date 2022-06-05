@@ -1,2 +1,2 @@
 import "./components/modal";
-import "./components/counter";
+import "./components/task-module";
