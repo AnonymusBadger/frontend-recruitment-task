@@ -1,0 +1,12 @@
+.user-table {
+  min-height: 0;
+  overflow: auto;
+  border-block: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-table > .button {
+  margin-block: 1rem;
+}

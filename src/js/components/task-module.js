@@ -11,9 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const countObserver = makeObserver(count => {
       const toggleReset = () => {
         if (count > 5) {
-          counter.resetButton.classList.remove("d-none");
+          counter.resetButtons.forEach(bttn => {
+            bttn.classList.remove("d-none");
+          });
         } else {
-          counter.resetButton.classList.add("d-none");
+          counter.resetButtons.forEach(bttn => {
+            bttn.classList.add("d-none");
+          });
         }
       };
       setTimeout(toggleReset, 200);

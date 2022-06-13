@@ -1,0 +1,8 @@
+@use "../../mixins/breakpoints" as b;
+
+.modal__footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -1.5rem;
+  min-height: 0;
+}
