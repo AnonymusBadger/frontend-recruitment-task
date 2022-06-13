@@ -6,6 +6,10 @@
   gap: 10px;
 }
 
+.modal__buttons > .button:last-child {
+  margin-bottom: 1.5rem;
+}
+
 @include b.breakpoint-up("sm") {
   .modal__buttons {
     flex-direction: row;
