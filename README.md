@@ -7,7 +7,7 @@ Credits to [Luke Haas](https://github.com/lukehaas) for providing plain CSS [spi
 
 [**Preview**](https://test-aplication-rectuitment.herokuapp.com/)
 
-To test User Table loading spinner placeholder, please enable network throttling in your browser.  
+To test User Table loading spinner placeholder, please enable network throttling in your browser. (might not work in Firefox)  
 If running in dev mode and you get an error, make sure your browser is not blocking cross site requests.
 
 ### Environment settings
