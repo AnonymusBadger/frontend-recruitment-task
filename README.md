@@ -2,7 +2,7 @@
 
 Project written in plain JS, no external packages used for styling or function.
 
-Build system has been expanded though, to support live browser reloads and code splitting.
+However build system has been expanded to support live browser reloads and code splitting.
 
 Credits to [Luke Haas](https://github.com/lukehaas) for providing plain CSS [spinners](https://projects.lukehaas.me/css-loaders/).
 
