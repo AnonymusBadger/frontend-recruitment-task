@@ -17,6 +17,8 @@ Credits to [Luke Haas](https://github.com/lukehaas) for providing plain CSS [spi
 
 - Add lazy loading for images, but using external library seems more reasonable to do so
 
+---
+
 # Zadanie rekrutacyjne GravityGlobal na frontend developera
 
 ## Informacje wstępne
