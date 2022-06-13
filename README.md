@@ -1,12 +1,22 @@
 # About
 
-Project written in plain JS, no external packages used for styling or function.
-
+Project written in plain JS, no external packages used for styling or function.  
 However build system has been expanded to support live browser reloads and code splitting.
 
 Credits to [Luke Haas](https://github.com/lukehaas) for providing plain CSS [spinners](https://projects.lukehaas.me/css-loaders/).
 
-### [Preview](https://test-aplication-rectuitment.herokuapp.com/)
+[**Preview**](https://test-aplication-rectuitment.herokuapp.com/)
+
+To test User Table loading spinner placeholder, please enable network throttling in your browser.  
+If running in dev mode and you get an error, make sure your browser is not blocking cross site requests.
+
+### Environment settings
+
+Can be changed in `gulpfile.js`. This defindes how gulp should build assets.
+
+- `dev` - runs server
+- `watch` - runs files watcher without the server
+- `build` - only build assets
 
 ## Requirements
 
