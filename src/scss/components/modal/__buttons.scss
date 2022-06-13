@@ -3,12 +3,7 @@
 .modal__buttons {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: -1rem;
-}
-
-.modal__buttons .button:last-child {
-  margin-bottom: 1rem;
+  gap: 10px;
 }
 
 @include b.breakpoint-up("sm") {

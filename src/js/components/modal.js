@@ -13,6 +13,9 @@ const makeModal = (el) => {
     if (!content.contains(event.target)) hide();
   };
 
+  const showEvent = new Event(`${el.id}-show`);
+  const hideEvent = new Event(`${el.id}-hide`);
+
   const show = () => {
     el.style.display = "block";
     setTimeout(() => {
@@ -20,6 +23,7 @@ const makeModal = (el) => {
     }, 150);
     document.body.classList.add("stop-scroll");
     document.addEventListener("click", clickOutside);
+    document.dispatchEvent(showEvent);
     el.focus();
   };
 
@@ -31,6 +35,7 @@ const makeModal = (el) => {
     document.body.classList.remove("stop-scroll");
     document.removeEventListener("click", clickOutside);
     trigger.focus();
+    document.dispatchEvent(hideEvent);
   };
 
   const toggle = () => {

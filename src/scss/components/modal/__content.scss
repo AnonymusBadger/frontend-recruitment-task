@@ -4,4 +4,7 @@
   position: relative;
   padding-inline: clamp(30px, 10vw, 95px);
   padding-block: clamp(50px, 10vw, 56px);
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
 }
