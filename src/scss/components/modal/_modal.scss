@@ -6,6 +6,7 @@
   background-color: rgba(c.$black, 0.5);
   display: none;
   min-width: 300px;
+  max-height: 100vh;
   transition: opacity 0.15s linear;
 }
 
